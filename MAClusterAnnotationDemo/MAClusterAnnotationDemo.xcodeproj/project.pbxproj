@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57AA895DFCD5EA709C0FFFC7 /* libPods-MAClusterAnnotationDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E46695626168F7A6F1DBE881 /* libPods-MAClusterAnnotationDemo.a */; };
+		5B5FB31626B918B600D10BE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5FB31426B918B600D10BE3 /* Main.storyboard */; };
+		5B5FB31826B918B700D10BE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5FB31726B918B700D10BE3 /* Assets.xcassets */; };
+		5B5FB31B26B918B700D10BE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5FB31926B918B700D10BE3 /* LaunchScreen.storyboard */; };
+		5B5FB31E26B918B700D10BE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5FB31D26B918B700D10BE3 /* main.m */; };
+		5B5FB36A26B919C600D10BE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5FB36826B919C600D10BE3 /* AppDelegate.m */; };
+		5B5FB37726B919D300D10BE3 /* ClusterAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5FB36E26B919D300D10BE3 /* ClusterAnnotation.m */; };
+		5B5FB37826B919D300D10BE3 /* CoordinateQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5FB36F26B919D300D10BE3 /* CoordinateQuadTree.m */; };
+		5B5FB37926B919D300D10BE3 /* QuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5FB37026B919D300D10BE3 /* QuadTree.m */; };
+		5B5FB37A26B919D300D10BE3 /* ClusterAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5FB37526B919D300D10BE3 /* ClusterAnnotationView.m */; };
+		5B5FB38726B919E600D10BE3 /* BaseMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5FB38226B919E600D10BE3 /* BaseMapViewController.m */; };
+		5B5FB38826B919E600D10BE3 /* AnnotationClusterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5FB38426B919E600D10BE3 /* AnnotationClusterViewController.m */; };
+		5B5FB38F26B91A3600D10BE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5FB38E26B91A3600D10BE3 /* Images.xcassets */; };
+		5B5FB3C926B9325500D10BE3 /* lineTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5FB3B726B9325500D10BE3 /* lineTexture.png */; };
+		5B5FB3CA26B9325500D10BE3 /* greenPin_lift@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5FB3B826B9325500D10BE3 /* greenPin_lift@2x.png */; };
+		5B5FB3CB26B9325500D10BE3 /* greenPin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5FB3B926B9325500D10BE3 /* greenPin@2x.png */; };
+		5B5FB3CC26B9325500D10BE3 /* userlocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5FB3BA26B9325500D10BE3 /* userlocation.png */; };
+		5B5FB3CD26B9325500D10BE3 /* purplePin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5FB3BB26B9325500D10BE3 /* purplePin@2x.png */; };
+		5B5FB3CE26B9325500D10BE3 /* pin_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5FB3BC26B9325500D10BE3 /* pin_shadow.png */; };
+		5B5FB3CF26B9325500D10BE3 /* greenPin.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5FB3BD26B9325500D10BE3 /* greenPin.png */; };
+		5B5FB3D026B9325500D10BE3 /* purplePin_lift.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5FB3BE26B9325500D10BE3 /* purplePin_lift.png */; };
+		5B5FB3D126B9325500D10BE3 /* userlocation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5FB3BF26B9325500D10BE3 /* userlocation@2x.png */; };
+		5B5FB3D226B9325500D10BE3 /* redPin_lift.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5FB3C026B9325500D10BE3 /* redPin_lift.png */; };
+		5B5FB3D326B9325500D10BE3 /* lineDashTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5FB3C126B9325500D10BE3 /* lineDashTexture.png */; };
+		5B5FB3D426B9325500D10BE3 /* purplePin.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5FB3C226B9325500D10BE3 /* purplePin.png */; };
+		5B5FB3D526B9325500D10BE3 /* redPin_lift@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5FB3C326B9325500D10BE3 /* redPin_lift@2x.png */; };
+		5B5FB3D626B9325500D10BE3 /* pin_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5FB3C426B9325500D10BE3 /* pin_shadow@2x.png */; };
+		5B5FB3D726B9325500D10BE3 /* purplePin_lift@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5FB3C526B9325500D10BE3 /* purplePin_lift@2x.png */; };
+		5B5FB3D826B9325500D10BE3 /* redPin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5FB3C626B9325500D10BE3 /* redPin@2x.png */; };
+		5B5FB3D926B9325500D10BE3 /* redPin.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5FB3C726B9325500D10BE3 /* redPin.png */; };
+		5B5FB3DA26B9325500D10BE3 /* greenPin_lift.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5FB3C826B9325500D10BE3 /* greenPin_lift.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		161E0BA3802AE121BDBCC005 /* Pods-MAClusterAnnotationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAClusterAnnotationDemo.debug.xcconfig"; path = "Target Support Files/Pods-MAClusterAnnotationDemo/Pods-MAClusterAnnotationDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5B5FB30826B918B600D10BE3 /* MAClusterAnnotationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAClusterAnnotationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B5FB31526B918B600D10BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B5FB31726B918B700D10BE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B5FB31A26B918B700D10BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B5FB31C26B918B700D10BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B5FB31D26B918B700D10BE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5B5FB36826B919C600D10BE3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5B5FB36926B919C600D10BE3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5B5FB36E26B919D300D10BE3 /* ClusterAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterAnnotation.m; sourceTree = "<group>"; };
+		5B5FB36F26B919D300D10BE3 /* CoordinateQuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordinateQuadTree.m; sourceTree = "<group>"; };
+		5B5FB37026B919D300D10BE3 /* QuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuadTree.m; sourceTree = "<group>"; };
+		5B5FB37126B919D300D10BE3 /* ClusterAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterAnnotation.h; sourceTree = "<group>"; };
+		5B5FB37226B919D300D10BE3 /* CoordinateQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordinateQuadTree.h; sourceTree = "<group>"; };
+		5B5FB37326B919D300D10BE3 /* QuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuadTree.h; sourceTree = "<group>"; };
+		5B5FB37526B919D300D10BE3 /* ClusterAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterAnnotationView.m; sourceTree = "<group>"; };
+		5B5FB37626B919D300D10BE3 /* ClusterAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterAnnotationView.h; sourceTree = "<group>"; };
+		5B5FB37D26B919DC00D10BE3 /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
+		5B5FB38026B919E600D10BE3 /* AnnotationClusterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationClusterViewController.h; sourceTree = "<group>"; };
+		5B5FB38226B919E600D10BE3 /* BaseMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMapViewController.m; sourceTree = "<group>"; };
+		5B5FB38426B919E600D10BE3 /* AnnotationClusterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationClusterViewController.m; sourceTree = "<group>"; };
+		5B5FB38526B919E600D10BE3 /* BaseMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMapViewController.h; sourceTree = "<group>"; };
+		5B5FB38E26B91A3600D10BE3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5B5FB3A826B91D5000D10BE3 /* MAClusterAnnotationDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAClusterAnnotationDemo.pch; sourceTree = "<group>"; };
+		5B5FB3B726B9325500D10BE3 /* lineTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lineTexture.png; sourceTree = "<group>"; };
+		5B5FB3B826B9325500D10BE3 /* greenPin_lift@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greenPin_lift@2x.png"; sourceTree = "<group>"; };
+		5B5FB3B926B9325500D10BE3 /* greenPin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greenPin@2x.png"; sourceTree = "<group>"; };
+		5B5FB3BA26B9325500D10BE3 /* userlocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userlocation.png; sourceTree = "<group>"; };
+		5B5FB3BB26B9325500D10BE3 /* purplePin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "purplePin@2x.png"; sourceTree = "<group>"; };
+		5B5FB3BC26B9325500D10BE3 /* pin_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin_shadow.png; sourceTree = "<group>"; };
+		5B5FB3BD26B9325500D10BE3 /* greenPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenPin.png; sourceTree = "<group>"; };
+		5B5FB3BE26B9325500D10BE3 /* purplePin_lift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purplePin_lift.png; sourceTree = "<group>"; };
+		5B5FB3BF26B9325500D10BE3 /* userlocation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "userlocation@2x.png"; sourceTree = "<group>"; };
+		5B5FB3C026B9325500D10BE3 /* redPin_lift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redPin_lift.png; sourceTree = "<group>"; };
+		5B5FB3C126B9325500D10BE3 /* lineDashTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lineDashTexture.png; sourceTree = "<group>"; };
+		5B5FB3C226B9325500D10BE3 /* purplePin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purplePin.png; sourceTree = "<group>"; };
+		5B5FB3C326B9325500D10BE3 /* redPin_lift@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redPin_lift@2x.png"; sourceTree = "<group>"; };
+		5B5FB3C426B9325500D10BE3 /* pin_shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pin_shadow@2x.png"; sourceTree = "<group>"; };
+		5B5FB3C526B9325500D10BE3 /* purplePin_lift@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "purplePin_lift@2x.png"; sourceTree = "<group>"; };
+		5B5FB3C626B9325500D10BE3 /* redPin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redPin@2x.png"; sourceTree = "<group>"; };
+		5B5FB3C726B9325500D10BE3 /* redPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redPin.png; sourceTree = "<group>"; };
+		5B5FB3C826B9325500D10BE3 /* greenPin_lift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenPin_lift.png; sourceTree = "<group>"; };
+		7BACB2BA055C477CDC154B42 /* Pods-MAClusterAnnotationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MAClusterAnnotationDemo.release.xcconfig"; path = "Target Support Files/Pods-MAClusterAnnotationDemo/Pods-MAClusterAnnotationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E46695626168F7A6F1DBE881 /* libPods-MAClusterAnnotationDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MAClusterAnnotationDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B5FB30526B918B600D10BE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57AA895DFCD5EA709C0FFFC7 /* libPods-MAClusterAnnotationDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B5FB2FF26B918B600D10BE3 = {
+			isa = PBXGroup;
+			children = (
+				5B5FB3A826B91D5000D10BE3 /* MAClusterAnnotationDemo.pch */,
+				5B5FB30A26B918B600D10BE3 /* MAClusterAnnotationDemo */,
+				5B5FB30926B918B600D10BE3 /* Products */,
+				B9B982361B5D4CDC1E9E086E /* Pods */,
+				B87CB717B2F4177902ED74BE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5B5FB30926B918B600D10BE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B5FB30826B918B600D10BE3 /* MAClusterAnnotationDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B5FB30A26B918B600D10BE3 /* MAClusterAnnotationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5B5FB3B626B9325500D10BE3 /* images */,
+				5B5FB39126B91A8A00D10BE3 /* Frameworks */,
+				5B5FB37E26B919E600D10BE3 /* Demo */,
+				5B5FB37C26B919DC00D10BE3 /* Configuration */,
+				5B5FB36C26B919D300D10BE3 /* ClusterAnnotation */,
+				5B5FB36926B919C600D10BE3 /* AppDelegate.h */,
+				5B5FB36826B919C600D10BE3 /* AppDelegate.m */,
+				5B5FB31426B918B600D10BE3 /* Main.storyboard */,
+				5B5FB31726B918B700D10BE3 /* Assets.xcassets */,
+				5B5FB31926B918B700D10BE3 /* LaunchScreen.storyboard */,
+				5B5FB31C26B918B700D10BE3 /* Info.plist */,
+				5B5FB31D26B918B700D10BE3 /* main.m */,
+				5B5FB38E26B91A3600D10BE3 /* Images.xcassets */,
+			);
+			path = MAClusterAnnotationDemo;
+			sourceTree = "<group>";
+		};
+		5B5FB36C26B919D300D10BE3 /* ClusterAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				5B5FB36D26B919D300D10BE3 /* Model */,
+				5B5FB37426B919D300D10BE3 /* View */,
+			);
+			path = ClusterAnnotation;
+			sourceTree = "<group>";
+		};
+		5B5FB36D26B919D300D10BE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B5FB36E26B919D300D10BE3 /* ClusterAnnotation.m */,
+				5B5FB36F26B919D300D10BE3 /* CoordinateQuadTree.m */,
+				5B5FB37026B919D300D10BE3 /* QuadTree.m */,
+				5B5FB37126B919D300D10BE3 /* ClusterAnnotation.h */,
+				5B5FB37226B919D300D10BE3 /* CoordinateQuadTree.h */,
+				5B5FB37326B919D300D10BE3 /* QuadTree.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5B5FB37426B919D300D10BE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B5FB37526B919D300D10BE3 /* ClusterAnnotationView.m */,
+				5B5FB37626B919D300D10BE3 /* ClusterAnnotationView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B5FB37C26B919DC00D10BE3 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				5B5FB37D26B919DC00D10BE3 /* APIKey.h */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		5B5FB37E26B919E600D10BE3 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				5B5FB37F26B919E600D10BE3 /* Controller */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		5B5FB37F26B919E600D10BE3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5B5FB38026B919E600D10BE3 /* AnnotationClusterViewController.h */,
+				5B5FB38226B919E600D10BE3 /* BaseMapViewController.m */,
+				5B5FB38426B919E600D10BE3 /* AnnotationClusterViewController.m */,
+				5B5FB38526B919E600D10BE3 /* BaseMapViewController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5B5FB39126B91A8A00D10BE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B5FB3B626B9325500D10BE3 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5B5FB3B726B9325500D10BE3 /* lineTexture.png */,
+				5B5FB3B826B9325500D10BE3 /* greenPin_lift@2x.png */,
+				5B5FB3B926B9325500D10BE3 /* greenPin@2x.png */,
+				5B5FB3BA26B9325500D10BE3 /* userlocation.png */,
+				5B5FB3BB26B9325500D10BE3 /* purplePin@2x.png */,
+				5B5FB3BC26B9325500D10BE3 /* pin_shadow.png */,
+				5B5FB3BD26B9325500D10BE3 /* greenPin.png */,
+				5B5FB3BE26B9325500D10BE3 /* purplePin_lift.png */,
+				5B5FB3BF26B9325500D10BE3 /* userlocation@2x.png */,
+				5B5FB3C026B9325500D10BE3 /* redPin_lift.png */,
+				5B5FB3C126B9325500D10BE3 /* lineDashTexture.png */,
+				5B5FB3C226B9325500D10BE3 /* purplePin.png */,
+				5B5FB3C326B9325500D10BE3 /* redPin_lift@2x.png */,
+				5B5FB3C426B9325500D10BE3 /* pin_shadow@2x.png */,
+				5B5FB3C526B9325500D10BE3 /* purplePin_lift@2x.png */,
+				5B5FB3C626B9325500D10BE3 /* redPin@2x.png */,
+				5B5FB3C726B9325500D10BE3 /* redPin.png */,
+				5B5FB3C826B9325500D10BE3 /* greenPin_lift.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		B87CB717B2F4177902ED74BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E46695626168F7A6F1DBE881 /* libPods-MAClusterAnnotationDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9B982361B5D4CDC1E9E086E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				161E0BA3802AE121BDBCC005 /* Pods-MAClusterAnnotationDemo.debug.xcconfig */,
+				7BACB2BA055C477CDC154B42 /* Pods-MAClusterAnnotationDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B5FB30726B918B600D10BE3 /* MAClusterAnnotationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B5FB32126B918B700D10BE3 /* Build configuration list for PBXNativeTarget "MAClusterAnnotationDemo" */;
+			buildPhases = (
+				2E226D1D6EC80324DE318214 /* [CP] Check Pods Manifest.lock */,
+				5B5FB30426B918B600D10BE3 /* Sources */,
+				5B5FB30526B918B600D10BE3 /* Frameworks */,
+				5B5FB30626B918B600D10BE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MAClusterAnnotationDemo;
+			productName = MAClusterAnnotationDemo;
+			productReference = 5B5FB30826B918B600D10BE3 /* MAClusterAnnotationDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B5FB30026B918B600D10BE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = river;
+				TargetAttributes = {
+					5B5FB30726B918B600D10BE3 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 5B5FB30326B918B600D10BE3 /* Build configuration list for PBXProject "MAClusterAnnotationDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B5FB2FF26B918B600D10BE3;
+			productRefGroup = 5B5FB30926B918B600D10BE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B5FB30726B918B600D10BE3 /* MAClusterAnnotationDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B5FB30626B918B600D10BE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B5FB3D826B9325500D10BE3 /* redPin@2x.png in Resources */,
+				5B5FB31B26B918B700D10BE3 /* LaunchScreen.storyboard in Resources */,
+				5B5FB3CE26B9325500D10BE3 /* pin_shadow.png in Resources */,
+				5B5FB3D926B9325500D10BE3 /* redPin.png in Resources */,
+				5B5FB3D726B9325500D10BE3 /* purplePin_lift@2x.png in Resources */,
+				5B5FB3D026B9325500D10BE3 /* purplePin_lift.png in Resources */,
+				5B5FB38F26B91A3600D10BE3 /* Images.xcassets in Resources */,
+				5B5FB3CF26B9325500D10BE3 /* greenPin.png in Resources */,
+				5B5FB3DA26B9325500D10BE3 /* greenPin_lift.png in Resources */,
+				5B5FB3D326B9325500D10BE3 /* lineDashTexture.png in Resources */,
+				5B5FB3D626B9325500D10BE3 /* pin_shadow@2x.png in Resources */,
+				5B5FB3D526B9325500D10BE3 /* redPin_lift@2x.png in Resources */,
+				5B5FB31826B918B700D10BE3 /* Assets.xcassets in Resources */,
+				5B5FB3CC26B9325500D10BE3 /* userlocation.png in Resources */,
+				5B5FB3CA26B9325500D10BE3 /* greenPin_lift@2x.png in Resources */,
+				5B5FB3D226B9325500D10BE3 /* redPin_lift.png in Resources */,
+				5B5FB3CD26B9325500D10BE3 /* purplePin@2x.png in Resources */,
+				5B5FB3CB26B9325500D10BE3 /* greenPin@2x.png in Resources */,
+				5B5FB3C926B9325500D10BE3 /* lineTexture.png in Resources */,
+				5B5FB31626B918B600D10BE3 /* Main.storyboard in Resources */,
+				5B5FB3D126B9325500D10BE3 /* userlocation@2x.png in Resources */,
+				5B5FB3D426B9325500D10BE3 /* purplePin.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E226D1D6EC80324DE318214 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MAClusterAnnotationDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B5FB30426B918B600D10BE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B5FB37726B919D300D10BE3 /* ClusterAnnotation.m in Sources */,
+				5B5FB36A26B919C600D10BE3 /* AppDelegate.m in Sources */,
+				5B5FB38726B919E600D10BE3 /* BaseMapViewController.m in Sources */,
+				5B5FB38826B919E600D10BE3 /* AnnotationClusterViewController.m in Sources */,
+				5B5FB37926B919D300D10BE3 /* QuadTree.m in Sources */,
+				5B5FB37826B919D300D10BE3 /* CoordinateQuadTree.m in Sources */,
+				5B5FB37A26B919D300D10BE3 /* ClusterAnnotationView.m in Sources */,
+				5B5FB31E26B918B700D10BE3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5B5FB31426B918B600D10BE3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B5FB31526B918B600D10BE3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5B5FB31926B918B700D10BE3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B5FB31A26B918B700D10BE3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B5FB31F26B918B700D10BE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5B5FB32026B918B700D10BE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B5FB32226B918B700D10BE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 161E0BA3802AE121BDBCC005 /* Pods-MAClusterAnnotationDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SJ3X49YY2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MAClusterAnnotationDemo/iOS_3D_ClusterAnnotation/extern",
+					"$(PROJECT_DIR)/MAClusterAnnotationDemo/Frameworks",
+				);
+				INFOPLIST_FILE = MAClusterAnnotationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jintong.MAClusterAnnotationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B5FB32326B918B700D10BE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BACB2BA055C477CDC154B42 /* Pods-MAClusterAnnotationDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SJ3X49YY2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MAClusterAnnotationDemo/iOS_3D_ClusterAnnotation/extern",
+					"$(PROJECT_DIR)/MAClusterAnnotationDemo/Frameworks",
+				);
+				INFOPLIST_FILE = MAClusterAnnotationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jintong.MAClusterAnnotationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B5FB30326B918B600D10BE3 /* Build configuration list for PBXProject "MAClusterAnnotationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B5FB31F26B918B700D10BE3 /* Debug */,
+				5B5FB32026B918B700D10BE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B5FB32126B918B700D10BE3 /* Build configuration list for PBXNativeTarget "MAClusterAnnotationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B5FB32226B918B700D10BE3 /* Debug */,
+				5B5FB32326B918B700D10BE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B5FB30026B918B600D10BE3 /* Project object */;
+}
