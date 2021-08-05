@@ -15,7 +15,7 @@
 
 - (void)configureAPIKey
 {
-    [AMapServices sharedServices].apiKey = @"apikey";
+    [AMapServices sharedServices].apiKey = @"6ba75e8f558548d3de2b5b9c41defd1c";
 }
 
 
