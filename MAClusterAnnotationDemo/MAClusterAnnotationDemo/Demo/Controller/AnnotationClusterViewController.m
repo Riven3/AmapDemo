@@ -14,7 +14,7 @@
 #import <AMapSearchKit/AMapSearchObj.h>
 
 
-#define kCalloutViewMargin -8
+#define kCalloutViewMargin -4
 
 @interface AnnotationClusterViewController ()<UITableViewDelegate>
 
@@ -77,21 +77,30 @@
 /* annotation弹出的动画. */
 - (void)addBounceAnnimationToView:(UIView *)view
 {
-    CAKeyframeAnimation *bounceAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
-    
-    bounceAnimation.values = @[@(0.05), @(1.1), @(0.9), @(1)];
-    bounceAnimation.duration = 0.6;
-    
-    NSMutableArray *timingFunctions = [[NSMutableArray alloc] initWithCapacity:bounceAnimation.values.count];
-    for (NSUInteger i = 0; i < bounceAnimation.values.count; i++)
-    {
-        [timingFunctions addObject:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
-    }
-    [bounceAnimation setTimingFunctions:timingFunctions.copy];
-    
-    bounceAnimation.removedOnCompletion = NO;
-    
-    [view.layer addAnimation:bounceAnimation forKey:@"bounce"];
+
+    //3ClusterAnnotationView *dd = (ClusterAnnotationView *)view
+    CGRect frame  = view.frame;
+    view.frame = CGRectMake(frame.origin.x + frame.size.width / 2, frame.origin.y + frame.size.height, 0, 0);
+    [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:1 initialSpringVelocity:0.3 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+        view.frame = CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, frame.size.height);
+    } completion:^(BOOL finished) {
+        
+    }];
+//    CAKeyframeAnimation *bounceAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
+//
+//    bounceAnimation.values = @[@(0.05), @(1.1), @(0.9), @(1)];
+//    bounceAnimation.duration = 0.6;
+//
+//    NSMutableArray *timingFunctions = [[NSMutableArray alloc] initWithCapacity:bounceAnimation.values.count];
+//    for (NSUInteger i = 0; i < bounceAnimation.values.count; i++)
+//    {
+//        [timingFunctions addObject:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+//    }
+//    [bounceAnimation setTimingFunctions:timingFunctions.copy];
+//
+//    bounceAnimation.removedOnCompletion = NO;
+//
+//    [view.layer addAnimation:bounceAnimation forKey:@"bounce"];
 }
 
 #pragma mark - MAMapViewDelegate
@@ -99,27 +108,28 @@
 - (void)mapView:(MAMapView *)mapView regionDidChangeAnimated:(BOOL)animated
 {
     /* mapView区域变化时重算annotation. */
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [self addAnnotationsToMapView:self.mapView];
-    });
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//
+//    });
+    [self addAnnotationsToMapView:self.mapView];
 
 }
 
-- (void)mapView:(MAMapView *)mapView annotationView:(MAAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
-{
-    id<MAAnnotation> annotation = view.annotation;
-    
-    if ([annotation isKindOfClass:[ClusterAnnotation class]])
-    {
-        ClusterAnnotation *clusterAnnotation = (ClusterAnnotation*)annotation;
-        
+//- (void)mapView:(MAMapView *)mapView annotationView:(MAAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
+//{
+//    id<MAAnnotation> annotation = view.annotation;
+//
+//    if ([annotation isKindOfClass:[ClusterAnnotation class]])
+//    {
+//        ClusterAnnotation *clusterAnnotation = (ClusterAnnotation*)annotation;
+//
 //        PoiDetailViewController *detail = [[PoiDetailViewController alloc] init];
 //        detail.poi = [clusterAnnotation.pois lastObject];
-        
-        /* 进入POI详情页面. */
-       // [self.navigationController pushViewController:detail animated:YES];
-    }
-}
+//
+//         进入POI详情页面.
+//        [self.navigationController pushViewController:detail animated:YES];
+//    }
+//}
 
 - (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation
 {

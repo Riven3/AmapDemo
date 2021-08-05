@@ -1,4 +1,7 @@
 target 'MAClusterAnnotationDemo' do
 #地图
-
+#pod 'AMap3DMap-NO-IDFA'
+#pod 'AMapLocation-NO-IDFA'
+#pod 'AMapTrack-NO-IDFA'
+#pod 'AMapSearch-NO-IDFA'
 end

@@ -26,7 +26,7 @@ CGPoint RectCenter(CGRect rect)
 CGRect CenterRect(CGRect rect, CGPoint center)
 {
     CGRect r = CGRectMake(center.x - rect.size.width/2.0,
-                          center.y - rect.size.height/2.0,
+                          center.y - rect.size.height/2.0 - 2,
                           rect.size.width,
                           rect.size.height);
     return r;
@@ -58,8 +58,9 @@ CGFloat ScaledValueForValue(CGFloat value)
     if (self)
     {
         self.backgroundColor = [UIColor clearColor];
-        [self setupLabel];
-        [self setCount:1];        
+        self.image = [UIImage imageNamed:@"btn_iconmap_normal"];
+        //[self setCount:1];
+        
     }
     
     return self;
@@ -71,10 +72,8 @@ CGFloat ScaledValueForValue(CGFloat value)
 {
     _countLabel = [[UILabel alloc] initWithFrame:self.frame];
     _countLabel.backgroundColor = [UIColor clearColor];
-    _countLabel.textColor       = [UIColor whiteColor];
+    _countLabel.textColor       = [UIColor blackColor];
     _countLabel.textAlignment   = NSTextAlignmentCenter;
-    _countLabel.shadowColor     = [UIColor colorWithWhite:0.0 alpha:0.75];
-    _countLabel.shadowOffset    = CGSizeMake(0, -1);
     _countLabel.adjustsFontSizeToFitWidth = YES;
     _countLabel.numberOfLines = 1;
     _countLabel.font = [UIFont boldSystemFontOfSize:12];
@@ -87,7 +86,7 @@ CGFloat ScaledValueForValue(CGFloat value)
     _count = count;
     
     /* 按count数目设置view的大小. */
-    CGRect newBounds = CGRectMake(0, 0, roundf(44 * ScaledValueForValue(count)), roundf(44 * ScaledValueForValue(count)));
+    CGRect newBounds = CGRectMake(0, 0, roundf(64 * ScaledValueForValue(count))  , roundf(64 * ScaledValueForValue(count)));
     self.frame = CenterRect(newBounds, self.center);
     
     CGRect newLabelBounds = CGRectMake(0, 0, newBounds.size.width / 1.3, newBounds.size.height / 1.3);
@@ -101,26 +100,26 @@ CGFloat ScaledValueForValue(CGFloat value)
 
 - (void)drawRect:(CGRect)rect
 {
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    
-    CGContextSetAllowsAntialiasing(context, true);
-    
-    UIColor *outerCircleStrokeColor = [UIColor colorWithWhite:0 alpha:0.25];
-    UIColor *innerCircleStrokeColor = [UIColor whiteColor];
-    UIColor *innerCircleFillColor = [UIColor colorWithRed:(255.0 / 255.0) green:(95 / 255.0) blue:(42 / 255.0) alpha:1.0];
-    
-    CGRect circleFrame = CGRectInset(rect, 4, 4);
-    
-    [outerCircleStrokeColor setStroke];
-    CGContextSetLineWidth(context, 5.0);
-    CGContextStrokeEllipseInRect(context, circleFrame);
-    
-    [innerCircleStrokeColor setStroke];
-    CGContextSetLineWidth(context, 4);
-    CGContextStrokeEllipseInRect(context, circleFrame);
-    
-    [innerCircleFillColor setFill];
-    CGContextFillEllipseInRect(context, circleFrame);
+//    CGContextRef context = UIGraphicsGetCurrentContext();
+//
+//    CGContextSetAllowsAntialiasing(context, true);
+//
+//    UIColor *outerCircleStrokeColor = [UIColor colorWithWhite:0 alpha:0.25];
+//    UIColor *innerCircleStrokeColor = [UIColor whiteColor];
+//    UIColor *innerCircleFillColor = [UIColor colorWithRed:(255.0 / 255.0) green:(95 / 255.0) blue:(42 / 255.0) alpha:1.0];
+//
+//    CGRect circleFrame = CGRectInset(rect, 4, 4);
+//
+//    [outerCircleStrokeColor setStroke];
+//    CGContextSetLineWidth(context, 5.0);
+//    CGContextStrokeEllipseInRect(context, circleFrame);
+//
+//    [innerCircleStrokeColor setStroke];
+//    CGContextSetLineWidth(context, 4);
+//    CGContextStrokeEllipseInRect(context, circleFrame);
+//
+//    [innerCircleFillColor setFill];
+//    CGContextFillEllipseInRect(context, circleFrame);
 }
 
 @end

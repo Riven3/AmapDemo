@@ -147,7 +147,7 @@ BoundingBox quadTreeNodeDataArrayForPOIs(QuadTreeNodeData *dataArray, NSArray * 
                 CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(totalX / count, totalY / count);
                 ClusterAnnotation *annotation = [[ClusterAnnotation alloc] initWithCoordinate:coordinate count:count];
                 annotation.pois  = pois;
-                annotation.title = [NSString stringWithFormat:@"%d results here.", [pois count]];
+                annotation.title = [NSString stringWithFormat:@"%ld results here.", [pois count]];
                 [clusteredAnnotations addObject:annotation];
             }
         }
@@ -169,7 +169,7 @@ BoundingBox quadTreeNodeDataArrayForPOIs(QuadTreeNodeData *dataArray, NSArray * 
     
     NSLog(@"build tree.");
     /*建立四叉树索引. */
-    self.root = QuadTreeBuildWithData(dataArray, [pois count], maxBounding, 4);
+    self.root = QuadTreeBuildWithData(dataArray, (int)[pois count], maxBounding, 4);
 }
 
 #pragma mark Life Cycle

@@ -45,9 +45,14 @@
     
     self.mapView.delegate = self;
     
+    [self.mapView setRotateEnabled:false];
+    
+    [self.mapView setRotateCameraEnabled:false];
+    
     [self.view addSubview:self.mapView];
     
-    self.mapView.visibleMapRect = MAMapRectMake(220880104, 101476980, 272496, 466656);
+    //self.mapView.visibleMapRect = MAMapRectMake(220880104, 101476980, 272496, 466656);
+    
 }
 
 - (void)initSearch
